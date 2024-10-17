@@ -1,3 +1,5 @@
+const ExpressError = require("../utils/ExpressError");
+
 const catchAsync = function (controllerFn) {
   return async (req, res, next) => {
     try {
